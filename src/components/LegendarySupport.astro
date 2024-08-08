@@ -1,0 +1,242 @@
+---
+import { Image } from 'astro:assets';
+import developer from '../media/svg2/developer.svg'
+import avatarGroup from '../media/svg2/avatarGroup.svg'
+---
+
+<div class="legendarySupport">
+  <div class="legendarySupContainer">
+    <div class="legendarySupHeader">
+      <div class="legendarySupHeaderLeft">
+        <p class="text-zentiGray font-inconsolata text-lg font-bold leading-[30px] tracking-[1.6px] uppercase text-left">Legendary support</p>
+        <h3 class="text-[#1E2022] max-w-[340px] font-public-sans text-[36px] font-medium leading-[46px] tracking-[-0.72px] mt-[24px] mb-[32px]">High-Five Support
+          For Your High-Risk Payments 🙌
+        </h3>
+        <h5 class="legSupH5">Clients are saying great things about Zenti’s solutions & support. </h5>
+      </div>
+      <div class="legendarySupHeaderRight">
+        <p class="legRightP">Join 100s of high-risk businesses...</p>
+        <span class="avatarGroup">
+          <Image src={avatarGroup} alt="developer"/>
+        </span>
+        <button class="btnLegendarySup">Why choose Zenti? Learn more...</button>
+      </div>
+    </div>
+    <div class="legendarySupportCardsCont">
+      <div class="legendarySupportCard">
+        <h5 class="legCardTitle">Solid foundation for any project</h5>
+        <p class="legCardContent">"This is a very complex and beautiful set of elements. 
+          Under the hood it comes with the best things from 2 different worlds: 
+          Figma and Tailwind.”
+        </p>
+        <p class="legCardAuthor">Micheal Gough</p>
+        <p class="legCardAuthorDetail">High Times</p>
+      </div>
+      <div class="legendarySupportCard">
+        <h5 class="legCardTitle">Solid foundation for any project</h5>
+        <p class="legCardContent">"This is a very complex and beautiful set of elements. 
+          Under the hood it comes with the best things from 2 different worlds: 
+          Figma and Tailwind.”
+        </p>
+        <p class="legCardAuthor">Micheal Gough</p>
+        <p class="legCardAuthorDetail">High Times</p>
+      </div>
+      <div class="legendarySupportCard">
+        <h5 class="legCardTitle">Solid foundation for any project</h5>
+        <p class="legCardContent">"This is a very complex and beautiful set of elements. 
+          Under the hood it comes with the best things from 2 different worlds: 
+          Figma and Tailwind.”
+        </p>
+        <p class="legCardAuthor">Micheal Gough</p>
+        <p class="legCardAuthorDetail">High Times</p>
+      </div>
+      <div class="legendarySupportCard">
+        <h5 class="legCardTitle">Solid foundation for any project</h5>
+        <p class="legCardContent">"This is a very complex and beautiful set of elements. 
+          Under the hood it comes with the best things from 2 different worlds: 
+          Figma and Tailwind.”
+        </p>
+        <p class="legCardAuthor">Micheal Gough</p>
+        <p class="legCardAuthorDetail">High Times</p>
+      </div>
+      <div class="legendarySupportCard">
+        <h5 class="legCardTitle">Solid foundation for any project</h5>
+        <p class="legCardContent">"This is a very complex and beautiful set of elements. 
+          Under the hood it comes with the best things from 2 different worlds: 
+          Figma and Tailwind.”
+        </p>
+        <p class="legCardAuthor">Micheal Gough</p>
+        <p class="legCardAuthorDetail">High Times</p>
+      </div>
+      <div class="legendarySupportCard">
+        <h5 class="legCardTitle">Solid foundation for any project</h5>
+        <p class="legCardContent">"This is a very complex and beautiful set of elements. 
+          Under the hood it comes with the best things from 2 different worlds: 
+          Figma and Tailwind.”
+        </p>
+        <p class="legCardAuthor">Micheal Gough</p>
+        <p class="legCardAuthorDetail">High Times</p>
+      </div>
+      <div class="legendarySupportCard">
+        <h5 class="legCardTitle">Solid foundation for any project</h5>
+        <p class="legCardContent">"This is a very complex and beautiful set of elements. 
+          Under the hood it comes with the best things from 2 different worlds: 
+          Figma and Tailwind.”
+        </p>
+        <p class="legCardAuthor">Micheal Gough</p>
+        <p class="legCardAuthorDetail">High Times</p>
+      </div>
+      <div class="legendarySupportCard">
+        <h5 class="legCardTitle">Solid foundation for any project</h5>
+        <p class="legCardContent">"This is a very complex and beautiful set of elements. 
+          Under the hood it comes with the best things from 2 different worlds: 
+          Figma and Tailwind.”
+        </p>
+        <p class="legCardAuthor">Micheal Gough</p>
+        <p class="legCardAuthorDetail">High Times</p>
+      </div>
+      <div class="legendarySupportCard">
+        <h5 class="legCardTitle">Solid foundation for any project</h5>
+        <p class="legCardContent">"This is a very complex and beautiful set of elements. 
+          Under the hood it comes with the best things from 2 different worlds: 
+          Figma and Tailwind.”
+        </p>
+        <p class="legCardAuthor">Micheal Gough</p>
+        <p class="legCardAuthorDetail">High Times</p>
+      </div>
+    </div>
+  </div>	
+</div>
+<style>
+	.legendarySupport{
+    width: 100%;
+    padding: 96px 24px;
+    background: var(--gray-50, #F4F6F9);
+  }
+  .legendarySupContainer{
+    max-width: 1216px;
+    margin: 0 auto;
+  }
+  .legendarySupHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+  }
+  .legendarySupHeaderLeft{
+    max-width: 600px;
+  }
+  .legSupH5{
+    color: var(--gray-500, #2D3E50);
+    /* text-xl/font-normal */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */    
+  }
+  .legendarySupHeaderRight{
+    max-width: 560px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .legRightP{
+    color: var(--gray-500, #2D3E50);
+
+    /* uppercase/text-sm/font-bold */
+    font-family: Inconsolata, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  /* .avatarGroup{
+    padding: 24px 0;
+  } */
+  .btnLegendarySup{
+    display: flex;
+    padding: var(--35, 14px) var(--6, 24px);
+    align-items: center;
+    gap: var(--2, 8px);
+    border-radius: 100px;
+    border: 1px solid var(--primary-500, #FF7A59);
+    color: var(--primary-600, #FF491C);
+    margin-top: 24px;
+  }  
+  .legendarySupportCardsCont{
+    margin-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .legendarySupportCard{
+    padding: 24px;
+    max-width: 389px;
+    width: 100%;
+    border-radius: var(--rounded-lg, 16px);
+    background: var(--white, #FFF);
+    margin: 8px;
+  }
+  .legCardTitle{
+    color: var(--gray-900, #10161C);
+    /* text-lg/font-bold */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
+  }
+  .legCardContent{
+    color: var(--gray-500, #2D3E50);
+    /* text-sm/font-normal */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    margin: 16px 0;
+  }
+  .legCardAuthor{
+    color: var(--gray-900, #10161C);
+    /* text-base/font-bold */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.32px;
+  }
+  .legCardAuthorDetail{
+    color: var(--gray-500, #2D3E50);
+    /* text-sm/font-medium */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+  }
+	@media screen and (max-width: 900px) { 
+    .legendarySupport{
+      width: 100%;
+      padding: 36px 24px;
+      background: var(--gray-50, #F4F6F9);
+    }   
+    .legendarySupHeader{
+      flex-direction: column;
+      align-items: center;
+      max-width: 550px;
+      margin: 0 auto;
+      gap: 48px;
+    }      
+    .legendarySupContainer{
+      max-width: 430px;
+      margin: 0 auto;
+    }
+  }
+</style>

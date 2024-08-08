@@ -1,0 +1,407 @@
+---
+import { Image } from 'astro:assets';
+import developer from '../media/svg2/developer.svg'
+import btnPrev from '../media/svg2/btnPrev.svg'
+import btnNext from '../media/svg2/btnNext.svg'
+import readMore from '../media/svg2/readMore.svg'
+import highTimes from '../media/png/highTimes.png'
+import GPayPaypal from '../media/png/GPayPaypal.png'
+import paypal from '../media/png/paypal.png'
+import chakraOpening from '../media/png/chakraOpening.png'
+
+import cryptoPayment from '../media/svg2/cryptoPayment.svg'
+import inPersonPayment from '../media/svg2/inPersonPayment.svg'
+import onlineE from '../media/svg2/onlineE.svg'
+import needSomething from '../media/svg2/needSomething.svg'
+---
+
+<div class="caseStudiesCont">	
+	<!-- <span class="lTCardImgCont">
+		<Image src={developer} alt="developer"/>
+	</span> -->
+  <div class="caseStudiesTextCont">
+    <p class="caseSP">Case Studies</p>
+    <h3 class="caseSH3">Zenti's Success Stories: <br>
+      High-Risk Payment Solutions for High-Risk Clients
+    </h3>
+    <span>
+      <button>        	
+        <span class="caseSImgCont">
+          <Image src={btnPrev} alt="developer"/>
+        </span>
+      </button>
+      <button>        	
+        <span class="caseSImgCont">
+          <Image src={btnNext} alt="developer"/>
+        </span>
+      </button>
+    </span>
+    <div class="cardsContainer">
+      <div class="caseSCard">             	
+        <span class="caseSCardImgCont">
+          <Image src={highTimes} alt="developer" class="caseSCardImg"/>
+        </span>
+        <p class="caseSCardP">
+          How High Times Overcame Low Times with Zenti’s Help
+        </p>
+        <span class="readMoreCont">            	
+          <span class="readMore">
+            <Image src={readMore} alt="developer"/>
+          </span>
+          <h5>Read more</h5>
+        </span>
+      </div>
+      <div class="caseSCard">             	
+        <span class="caseSCardImgCont">
+          <Image src={GPayPaypal} alt="developer" class="caseSCardImg"/>
+        </span>
+        <p class="caseSCardP">
+          Peele Industries, Approved to Use Apple & Google Pay
+        </p>
+        <span class="readMoreCont">            	
+          <span class="readMore">
+            <Image src={readMore} alt="developer" class=""/>
+          </span>
+          <h5>Read more</h5>
+        </span>
+      </div>
+      <div class="caseSCard">             	
+        <span class="caseSCardImgCont">
+          <Image src={paypal} alt="developer" class="caseSCardImg"/>
+        </span>
+        <p class="caseSCardP">
+          Danielle’s Lip Service Was Shut Down by PayPal
+        </p>
+        <span class="readMoreCont">            	
+          <span class="readMore">
+            <Image src={readMore} alt="developer" class=""/>
+          </span>
+          <h5>Read more</h5>
+        </span>
+      </div>
+      <div class="caseSCard">             	
+        <span class="caseSCardImgCont">
+          <Image src={chakraOpening} alt="developer" class="caseSCardImg"/>
+        </span>
+        <p class="caseSCardP">
+          Chakra Openings was  Blacklisted!
+        </p>
+        <span class="readMoreCont">            	
+          <span class="readMore">
+            <Image src={readMore} alt="developer" class=""/>
+          </span>
+          <h5>Read more</h5>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="paymentProcessing">
+  <div class="paymentProcessingCont">
+    <p class="text-zentiGray font-inconsolata text-lg font-bold leading-[30px] tracking-[1.6px] uppercase text-center">Payment Processing</p>
+    <h3 class="text-[#1E2022] text-center font-public-sans text-[36px] font-medium leading-[46px] tracking-[-0.72px] mt-[24px] mb-[32px]">Payment Solutions for Any Transaction</h3>
+    <h5 class="paymentH5">The payment solutions and tools your business needs to accept payments.</h5>
+    <div class="paymentCardsWrapper">
+      <div class="paymentCardTall">     
+        <h3 class="cardsPaymentH3">Online & <br>Ecommerce</h3>     
+        <p class="cardsPaymentP">Add payments to your online store, website or app.</p>       	
+        <span class="paymentImageCont">
+          <Image
+          src={onlineE} alt="onlineE" 
+          widths={[240, 540, 720, onlineE.width]}
+          sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${onlineE.width}px`}
+          />
+        </span>
+      </div> 
+      <div class="paymentSmallCardsWrapper">
+        <div class="paymentCardSmallTop">          
+          <h3 class="cardsPaymentH3">In-Person <br>Payments </h3> 
+          <p class="cardsPaymentPSmall">Easily accept, in-store or in-person payments.</p>       	
+          <span class="paymentImageContSmall">
+            <Image src={inPersonPayment} alt="inPersonPayment"/>
+          </span>
+        </div>
+        <div class="paymentCardSmallBottom">          
+          <h3 class="cardsPaymentH3">Accept Crypto <br>Payments</h3> 
+          <p class="cardsPaymentPSmall">Start accepting cryptocurrencies.</p>       	
+          <span class="paymentImageContSmall">
+            <Image src={cryptoPayment} alt="inPersonPayment"/>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="needSCont">
+      <span>
+        <h3 class="needSH3">Need Something Else?</h3>
+        <p class="needSP">Click ‘Get Free Guidance Now!’ to explore more options with Zenti!</p>
+      </span>
+      <span class="needSomethingImgcont">
+        <Image src={needSomething} alt="needSomething"/>
+      </span>
+    </div>
+  </div>
+</div>
+<style>
+  .caseStudiesCont{
+    width: 100%;
+    background: var(--gray-800, #172029);
+    padding: 96px 24px;
+    
+    .caseStudiesTextCont{
+      max-width: 1248px;
+      margin: 0 auto;
+      overflow: hidden;
+      z-index: 9;
+    }
+    .caseSCardImg{
+      border-radius: 16px;
+    }
+    .caseSP{
+      color: var(--green-500, #00A492);
+      /* uppercase/text-base/font-bold */
+      font-family: Inconsolata, sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 30px */
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+    .caseSH3{
+      color: var(--white, #FFF);
+      /* leading-tight/text-4xl/font-semibold */
+      font-family: 'Public-Sans', 'sans-serif';
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 125%; /* 45px */
+      letter-spacing: -0.72px;
+      margin: 24px 0
+
+    }
+    .cardsContainer{
+      margin-top: 24px;
+      display: flex;
+      gap: 24px;
+      min-width: 1440px;
+      z-index: 9;
+    }
+    .caseSCard{
+      width: 342px;
+      overflow: hidden;
+      z-index: 10;
+
+    }
+    .caseSCardP{
+      color: var(--white, #FFF);
+      /* leading-tight/text-2xl/font-medium */
+      font-family: 'Public-Sans', 'sans-serif';
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 34px; /* 141.667% */
+      letter-spacing: -0.48px;
+      margin: 24px 0 36px 0
+    }
+    .readMoreCont{
+      color: var(--primary-500, #FF7A59);
+      text-align: center;
+      /* uppercase/text-base/font-bold */
+      font-family: Inconsolata, sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 30px */
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      max-width: 160px;
+      justify-content: space-between;
+    }
+    .readMore{
+      border-radius: 10px;
+      background: var(--primary-500, #FF7A59);
+      display: flex;
+      width: 20px;
+      height: 20px;
+      padding: 3px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+	.paymentProcessing{
+    background: var(--gray-50, #F4F6F9);
+    padding: var(--24, 96px) 24px;
+
+    .paymentProcessingCont{
+      max-width: 1038px;
+      width: 100%;
+      margin: 0 auto
+    }
+    .paymentH5{
+      color: var(--gray-500, #2D3E50);
+      text-align: center;
+
+      /* text-xl/font-normal */
+      font-family: 'Public-Sans', 'sans-serif';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 30px */
+      margin-bottom: 56px
+    }
+    .cardsPaymentH3{
+      color: var(--black-gray, #1E2022);
+      /* leading-tight/text-3xl/font-semibold */
+      font-family: 'Public-Sans', 'sans-serif';
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 40px; /* 133.333% */
+      letter-spacing: -0.6px;
+    }
+    .cardsPaymentP{
+      color: var(--gray-500, #2D3E50);
+
+      /* text-lg/font-norma`l */
+      font-family: 'Public-Sans', 'sans-serif';
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 27px */
+      margin: 20px 0 56px 0;
+    }
+    .paymentCardTall{
+      height: 715px;
+      border-radius: var(--rounded-lg, 16px);
+      border: 1px solid var(--gray-200, #A5B8CD);
+      background: var(--white, #FFF);
+      max-width: 504px;
+      width: 100%;
+      padding: 78px 32px;
+      margin-right: 12px
+    }
+    .paymentSmallCardsWrapper{      
+      max-width: 504px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 12px
+    }
+    .paymentCardSmallTop{
+      height: 341px;
+      border-radius: var(--rounded-lg, 16px);
+      border: 1px solid var(--gray-200, #A5B8CD);
+      background: var(--white, #FFF);
+      width: 100%;
+      padding: 32px;
+    }
+    .paymentCardSmallBottom{
+      height: 341px;
+      border-radius: var(--rounded-lg, 16px);
+      border: 1px solid var(--gray-200, #A5B8CD);
+      background: var(--white, #FFF);
+      width: 100%;
+      padding: 32px;
+    }
+    .cardsPaymentPSmall{
+      color: var(--gray-500, #2D3E50);
+
+      /* text-lg/font-norma`l */
+      font-family: 'Public-Sans', 'sans-serif';
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 27px */
+      margin: 16px 0 24px 0;
+    }
+    .paymentImageContSmall{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .paymentCardsWrapper{
+      display: flex;
+      justify-content: space-between;
+      max-width: 1038px;
+    }
+    .needSH3{
+      color: var(--black-gray, #1E2022);
+
+      /* leading-tight/text-3xl/font-semibold */
+      font-family: 'Public-Sans', 'sans-serif';
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 40px; /* 133.333% */
+      letter-spacing: -0.6px;
+    }
+    .needSP{
+      color: var(--gray-500, #2D3E50);
+
+      /* text-lg/font-normal */
+      font-family: 'Public-Sans', 'sans-serif';
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 27px */
+    }
+    .needSCont{
+      display: flex;
+      padding: 32px;
+      justify-content: space-between;
+      border-radius: var(--rounded-lg, 16px);
+      border: 1px solid var(--gray-200, #A5B8CD);
+      background: var(--white, #FFF);
+      margin-top: 32px;
+    }
+
+
+  }
+	@media screen and (max-width: 900px) {
+    .caseStudiesCont{
+      padding: 36px 24px;
+      
+      .caseStudiesTextCont{
+        max-width: 430px;
+        margin: 0 auto;
+        overflow: hidden;
+        z-index: 9;
+      }
+    }
+    .paymentProcessing{ 
+      .paymentProcessingCont{
+        max-width: 430px;
+        width: 100%;
+        margin: 0 auto
+      }     
+      .paymentCardsWrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 24px
+      }
+      .paymentSmallCardsWrapper{      
+        margin-left: 0
+      }
+      .paymentSmallCardsWrapper{      
+        gap: 24px;
+      }
+      .paymentCardTall{
+        height: 601px;
+        border-radius: var(--rounded-lg, 16px);
+        border: 1px solid var(--gray-200, #A5B8CD);
+        background: var(--white, #FFF);
+        max-width: 504px;
+        width: 100%;
+        padding: 32px 32px;
+        margin-right: 0px
+      }
+      .needSCont{
+        flex-direction: column;
+        align-items: center
+      }
+    }
+  }
+</style>

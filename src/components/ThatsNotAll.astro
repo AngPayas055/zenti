@@ -1,0 +1,62 @@
+---
+import { Image } from 'astro:assets';
+import howItWorks1 from '../media/svg3/howItWorks1.svg'
+---
+
+<div class="thatsNotAll">	
+  <div class="thatsNotAllCont">
+    <p class="text-zentiGray font-inconsolata text-lg font-bold leading-[30px] tracking-[1.6px] uppercase text-center">And That’s Not All...</p>
+    <h3 class="text-[#1E2022] text-center font-public-sans text-[36px] font-medium leading-[46px] tracking-[-0.72px] mt-[24px] mb-[32px]">No Monthly Fees, No Contracts, No Cancellation Penalties — Just Honest Payment Processing</h3>
+    <p class="thatsNotAllDetail">At Zenti, you won't deal with monthly charges, cancellation fees, or hidden costs. 
+      You deserve transparency and honesty in your payment processing, 
+      ensuring you keep more of your hard-earned money. Partner with Zenti and experience fair pricing 
+      tailored to support your high-risk business without the extra headaches.
+    </p>
+    <h5 class="thatsNotAllInfo">So what are you waiting for? Click ‘Get Free Guidances Now!’ to get started with Zenti today.
+
+    </h5>
+  </div>
+</div>
+<style>
+	.thatsNotAll{
+    background: var(--gray-50, #F4F6F9);
+    padding: 96px 24px;
+    width: 100%;
+  }
+  .thatsNotAllCont{
+    max-width: 682px;
+    margin: 0 auto
+  }
+  .thatsNotAllDetail{
+    color: var(--gray-500, #2D3E50);
+
+    /* leading-none/text-xl/font-normal */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    margin-bottom: 32px;
+  }
+  .thatsNotAllInfo{
+    color: var(--gray-600, #263443);
+    /* text-2xl/font-semibold */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px; /* 141.667% */
+    letter-spacing: -0.48px;
+  }
+	@media screen and (max-width: 900px) {
+    .thatsNotAll{
+      background: var(--gray-50, #F4F6F9);
+      padding: 36px 24px;
+      width: 100%;
+    }
+    .thatsNotAllCont{
+      max-width: 430px;
+      margin: 0 auto
+    }
+  }
+</style>

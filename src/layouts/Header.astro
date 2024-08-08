@@ -1,0 +1,169 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../media/svg/logo.svg'
+import chvronUp from '../media/svg/chevron-up.svg'
+import chvronDown from '../media/svg/chevron-down.svg'
+import bars from '../media/svg/bars.svg'
+---
+
+
+<div class="headerWrapper sticky top-0 bg-white z-50">
+	<nav class="bg-white border-gray-200 max-w-[430px] astrolg:max-w-[1280px] mx-auto">
+		<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+			<span class="logoCont">
+				<Image src={logo} alt="Logo" />
+			</span>
+			<span class="flex astrolg:hidden items-center gap-3">
+				<button class="btnGetFreeGuidance">Get Free Guidance Now!</button>
+			</span>
+			<button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg astrolg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+					<span class="sr-only">Open main menu</span>
+					<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+					</svg>
+			</button>
+			<div class="hidden w-full astrolg:block astrolg:w-auto" id="navbar-default">
+				<ul class="font-medium flex flex-col p-4 astrolg:p-0 mt-4 bg-gray-50 astrolg:flex-row astrolg:space-x-8 rtl:space-x-reverse astrolg:mt-0 astrolg:border-0 astrolg:bg-white ">
+					<li>
+						<a href="#solutions" class="text-zentiOrange font-public-sans flex items-center py-2 px-3 bg-blue-700 rounded astrolg:bg-transparent astrolg:text-blue-700 astrolg:p-0 " aria-current="page">
+							Solutions 
+							<span class="ms-1"><Image src={chvronUp} alt="Logo" /></span>
+						</a>
+					</li>
+					<li>
+						<a href="#questions" class="block font-public-sans py-2 px-3 text-gray-900 rounded hover:bg-gray-100 astrolg:hover:bg-transparent astrolg:border-0 astrolg:hover:text-blue-700 astrolg:p-0 ">
+							Why Zenti?</a>
+					</li>
+					<li>
+						<a href="#highRisk" class="block font-public-sans py-2 px-3 text-gray-900 rounded hover:bg-gray-100 astrolg:hover:bg-transparent astrolg:border-0 astrolg:hover:text-blue-700 astrolg:p-0 ">
+							Industries</a>
+					</li>
+					<li>
+						<a href="#Integration" class="block font-public-sans py-2 px-3 text-gray-900 rounded hover:bg-gray-100 astrolg:hover:bg-transparent astrolg:border-0 astrolg:hover:text-blue-700 astrolg:p-0 ">
+							Resources</a>
+					</li>
+				</ul>
+			</div>
+			<span class="hidden astrolg:flex items-center gap-3">
+				<a href="#contactUs" class="navMenuFont">Contact us</a>
+				<button class="btnGetFreeGuidance">Get Free Guidance Now!</button>
+			</span>
+		</div>
+	</nav>
+</div>
+
+
+<style>
+	
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+	.smallScreen{
+		display: none;
+	}
+	.logoCont{
+		width: 95.576px;
+		height: 32px;	
+	}
+	.mainCont{
+		/* max-width: 1440px;
+		width: 100%;
+		margin: 0 auto; */
+		/* padding: 0 24px */
+	}
+	.headerWrapper{
+		width: 100%;
+		box-shadow: 0px 2px 8px 0px rgba(17, 17, 18, 0.08), 0px 0px 2px 0px rgba(17, 17, 18, 0.02);
+	}
+	.headerCont{
+		display: flex;
+		justify-content: space-between;
+		padding: var(--6, 24px);
+		max-width: 1280px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.navMenu{
+		display: flex;
+		align-items: center;
+		gap: var(--8, 32px);
+	}
+	.contactMenu{
+		display: flex;
+		align-items: center;
+		gap: var(--4, 16px);
+	}
+	.btnGetFreeGuidance{
+		border-radius: var(--rounded-3xl, 240px);
+		background: var(--primary-500, #FF7A59);
+		display: flex;
+		padding: var(--25, 10px) var(--5, 20px);
+		justify-content: center;
+		align-items: center;
+		gap: var(--2, 8px);
+		color: #fff;
+		font-family: 'Public-Sans', 'sans-serif';
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 150%; /* 21px */
+	}
+	.navMenuFont{
+		color: var(--black-gray, #1E2022);
+		/* text-sm/font-medium */
+		font-family: 'Public-Sans', 'sans-serif';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%; /* 21px */
+
+	}
+	.navMenuFontActive{
+		color: var(--primary-700, #DE2C00);
+		text-align: center;
+		/* text-base/font-medium */
+		font-family: 'Public-Sans', 'sans-serif';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%; /* 24px */
+	}
+	
+	@media screen and (max-width: 900px) {
+		.largeScreen{
+			display: none;
+		}
+		.smallScreen{
+			display: block;
+		}
+		.headerCont{
+			display: flex;
+			justify-content: space-between;
+			padding: var(--6, 24px);
+			max-width: 430px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.btnGetFreeGuidance{
+			padding: var(--2, 8px) var(--3, 12px);
+			color: var(--white, #FFF);
+			/* text-xs/font-semibold */
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 150%; /* 18px */
+		}
+		.logoCont{
+			width: 95.576px;
+			height: 32px;	
+		}
+	}
+</style>

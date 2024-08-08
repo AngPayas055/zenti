@@ -1,0 +1,254 @@
+---
+import { Image } from 'astro:assets';
+import bugsStreamline from '../media/svg/bugs-streamline.svg'
+import circleOne from '../media/svg/circleOne.svg'
+import circleTwo from '../media/svg/circleTwo.svg'
+import circleThree from '../media/svg/circleThree.svg'
+// interface Props {
+// 	title: string;
+// 	body: string;
+// 	href: string;
+// }
+
+// const { href, title, body } = Astro.props;
+---
+
+<div class="sectionTwoCont">
+  <div class="sectionTwo">
+    <div class="sctTwoInner">
+      <div class="stLeft">        
+        <Image src={bugsStreamline} alt="Logo" class="ms-auto"/>
+      </div>
+      <div class="stRight">
+        <p class="text-zentiGray font-inconsolata text-lg font-bold leading-[30px] tracking-[1.6px] uppercase text-left">High-risk Business?</p>
+        <h3 class="text-[#1E2022] font-public-sans text-[36px] font-medium leading-[46px] tracking-[-0.72px] mt-[24px] mb-[32px]">It Can Feel Like the Deck Is Stacked Against You.</h3>
+        <p class="stP">Getting approved for the payment solutions you need? <br>
+          A minefield.
+        </p>
+        <p class="stP">
+          Finding a reliable merchant account with transparent rates? A struggle. 
+        </p>
+        <p class="stP">
+          Even when you think you’ve found the right provider, you’re 
+          often blindsided by holds, freezes, or sudden terminations.
+        </p>
+        <p class="stPBold">Yet, all providers seem to promise the lowest rates, fastest approvals and no dramas...
+
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="featuresOuterCont">  
+  <div class="features">
+    <h4 class="fHeading">And the problems don’t end there...</h4>
+    <div class="featuresCardCont">
+      <div class="featureCards">
+        <span>
+          <Image src={circleOne} alt="circleOne" class="ms-auto"/>
+        </span>
+        <p class="fontCAF">Chargebacks & Fraud</p>
+        <p class="fontFeat">The small print can make you pay big 
+          with hidden fees & disruption.
+        </p>
+      </div>
+      <div class="featureCards">
+        <span>
+          <Image src={circleTwo} alt="circleOne" class="ms-auto"/>
+        </span>
+        <p class="fontCAF">Chargebacks & Fraud</p>
+        <p class="fontFeat">The small print can make you pay big 
+          with hidden fees & disruption.
+        </p>
+      </div>
+      <div class="featureCards">
+        <span>
+          <Image src={circleThree} alt="circleOne" class="ms-auto"/>
+        </span>
+        <p class="fontCAF">Chargebacks & Fraud</p>
+        <p class="fontFeat">The small print can make you pay big 
+          with hidden fees & disruption.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .sectionTwoCont{
+    padding: 80px 24px
+  }
+  .sectionTwo{
+    display: flex;
+    padding: var(--24, 96px) var(--6, 24px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--25, 10px);
+    align-self: stretch;
+    border-radius: var(--rounded-xl, 32px);
+    border: 1px solid var(--gray-200, #A5B8CD);
+    background: var(--gray-50, #F4F6F9);
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .sctTwoInner{
+    display: flex;
+    max-width: 1280px;
+    width: 100%;
+    padding: var(--12, 48px) 48px;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    gap: var(--12, 48px);
+  }
+  .stRight{
+    max-width: 608px;
+    width: 100%;
+  }
+  .stH3{
+    color: var(--black-gray, #1E2022);
+    /* leading-tight/text-4xl/font-medium */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46px; /* 127.778% */
+    letter-spacing: -0.72px;
+    margin-top: 24px;
+    margin-bottom: 32px
+  }
+  .stP{
+    align-self: stretch;
+    color: var(--gray-500, #2D3E50);
+    /* text-xl/font-semibold */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.4px;
+    margin-bottom: 16px;
+  }
+  .stPBold{
+    color: var(--gray-500, #2D3E50);
+
+    /* text-xl/font-semibold */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.4px;
+  }
+  .featuresOuterCont{
+    width: 100%;    
+    background: var(--gray-800, #172029);
+  }
+  .features{
+    padding: var(--24, 96px) var(--6, 24px);
+    background: var(--gray-800, #172029);
+    max-width: 1313px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .fHeading{
+    color: var(--white, #FFF);
+    text-align: center;
+
+    /* leading-tight/text-4xl/font-semibold */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 45px */
+    letter-spacing: -0.72px;
+    margin-bottom: 40px;
+  }
+  .featuresCardCont{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px
+  }
+  .featureCards{
+    display: flex;
+    max-width: 427px;
+    width: 100%;
+    padding: 32px var(--4, 16px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--4, 16px);
+    align-self: stretch;
+    border-radius: var(--rounded-lg, 16px);
+    border: 1px solid var(--gray-400, #4A6684);
+  }
+  .fontCAF{
+    color: var(--white, #FFF);
+    text-align: center;
+
+    /* uppercase/text-base/font-semibold */
+    font-family: Inconsolata, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-top: 16px;
+  }
+  .fontFeat{
+    color: var(--gray-200, #A5B8CD);
+    text-align: center;
+
+    /* text-lg/font-normal */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+  }
+	@media screen and (max-width: 900px) {
+    .sectionTwo{
+      display: flex;
+      padding: 36px 24px;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--25, 10px);
+      align-self: stretch;
+      border-radius: var(--rounded-xl, 32px);
+      border: 1px solid var(--gray-200, #A5B8CD);
+      background: var(--gray-50, #F4F6F9);
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+		.largeScreen{
+			display: none;
+		}
+		.smallScreen{
+			display: block;
+		}
+    .sectionTwoCont{
+      padding: 32px 24px;
+      
+      max-width: 430px;
+      margin: 0 auto
+    }
+    .sctTwoInner{
+      flex-direction: column-reverse;
+      padding: 0;
+    }
+    .featuresCardCont{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* display: flex;
+      justify-content: space-between;
+      gap: 32px */
+    }
+    .featureCards{
+      margin: 0 auto
+    }
+    .features{
+      padding: 36px 24px;
+      max-width: 430px;
+    }
+  }
+</style>

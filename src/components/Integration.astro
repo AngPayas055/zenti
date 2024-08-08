@@ -1,0 +1,205 @@
+---
+import { Image } from 'astro:assets';
+import developer from '../media/svg2/developer.svg'
+import xeroLogo from '../media/svgIntegration/xeroLogo.svg'
+import bigCommerce from '../media/svgIntegration/bigCommerce.svg'
+import goHighLevel from '../media/svgIntegration/goHighLevel.svg'
+import hubspot from '../media/svgIntegration/hubspot.svg'
+import quickbooks from '../media/svgIntegration/quickbooks.png'
+import salesForce from '../media/svgIntegration/salesForce.svg'
+import shopify from '../media/svgIntegration/shopify.svg'
+import wave from '../media/svgIntegration/wave.png'
+import woo from '../media/svgIntegration/woo.svg'
+---
+
+<div id="Integration" class="Integration">	
+  <div class="integrationCont">
+    <h5 class="text-zentiGray font-inconsolata text-lg font-bold leading-[30px] tracking-[1.6px] uppercase text-left">100+ Integrations</h5>
+    <h2 class="text-[#1E2022] font-public-sans text-[36px] font-medium leading-[46px] tracking-[-0.72px] mt-[24px] mb-[32px]">Connect Zenti with Your Favorite Apps & Software</h2>
+    <div class="intCardsWrapper">
+      <div class="intCardsCont">
+        <h4 class="integrationh4">ACCOUNTING</h4>
+        <div class="integrationCard">
+          <div class="integrationCardImageCont">
+            <Image src={xeroLogo} alt="xeroLogo"/>
+          </div>
+          <h5 class="intCardh5">Xero</h5>
+        </div>
+        <div class="integrationCard">          
+          <Image src={quickbooks} alt="quickbooks"/>
+          <h5 class="intCardh5">Xero</h5>
+        </div>
+        <div class="integrationCard">
+          <Image src={wave} alt="wave"/>
+          <h5 class="intCardh5">Xero</h5>
+        </div>
+      </div>
+      <div class="intCardsCont centerInt">
+        <h4 class="integrationh4">ECOMMERCE</h4>
+        <div class="integrationCard">
+          <div class="integrationCardImageCont">
+            <Image src={shopify} alt="xeroLogo"/>
+          </div>
+          <h5 class="intCardh5">Shopify</h5>
+        </div>
+        <div class="integrationCard">     
+          <div class="integrationCardImageCont">
+            <Image src={woo} alt="woo"/>
+          </div>     
+          <h5 class="intCardh5">WooCommerce</h5>
+        </div>
+        <div class="integrationCard"> 
+          <div class="integrationCardImageCont">
+            <Image src={bigCommerce} alt="bigCommerce"/>
+          </div>  
+          <h5 class="intCardh5">Bigcommerce</h5>
+        </div>
+      </div>
+      <div class="intCardsCont">
+        <h4 class="integrationh4">CRM</h4>
+        <div class="integrationCard">
+          <div class="integrationCardImageCont">
+            <Image src={hubspot} alt="hubspot"/>
+          </div>
+          <h5 class="intCardh5">Hubspot</h5>
+        </div>
+        <div class="integrationCard">  
+          <div class="integrationCardImageCont">
+            <Image src={salesForce} alt="salesForce"/>
+          </div>        
+          <h5 class="intCardh5">Salesforce</h5>
+        </div>
+        <div class="integrationCard">
+          <div class="integrationCardImageCont">
+            <Image src={goHighLevel} alt="goHighLevel"/>
+          </div>      
+          <h5 class="intCardh5">Go High Level</h5>
+        </div>
+      </div>
+    </div>
+    <h5 class="integrationBottomh5">AND MORE...</h5>
+    <button class="btnViewIntegration">View all Integrations</button>
+  </div>
+	<!-- <span class="">
+		<Image src={developer} alt="developer"/>
+	</span> -->
+</div>
+<style>
+	.Integration{
+    width: 100%;
+    padding: 96px 24px;
+    background: var(--white, #FFF);
+    
+    .integrationCont{
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .integrationh4{
+      color: var(--gray-500, #2D3E50);
+      /* text-xl/font-bold */
+      font-family: 'Public-Sans', 'sans-serif';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 30px */
+      letter-spacing: -0.4px;
+      margin-bottom: 24px;
+    }
+    .integrationCard{
+      border-radius: var(--rounded-lg, 16px);
+      border: 1px solid var(--gray-200, #A5B8CD);
+      background: var(--white, #FFF);
+      padding: 32px;
+      max-width: 378px;
+      width: 100%;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      height: 147px;
+      gap: 32px;
+    }
+    .intCardsWrapper{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .intCardsCont{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center
+    }
+    .integrationCardImageCont{
+      border-radius: var(--rounded-md, 8px);
+      border: 1px solid var(--gray-100, #D9E1EA);
+      padding: 5px 21px;
+      width: 114px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+    }
+    .intCardh5{
+      color: var(--gray-900, #10161C);
+      /* leading-tight/text-xl/font-bold */
+      font-family: 'Public-Sans', 'sans-serif';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 125%; /* 25px */
+      letter-spacing: -0.4px;
+      /* margin-left: 32px; */
+    }
+    .centerInt{
+      margin-left: 16px;
+      margin-right: 16px
+    }
+    .integrationBottomh5{
+      color: var(--gray-500, #2D3E50);
+      /* text-xl/font-bold */
+      font-family: 'Public-Sans', 'sans-serif';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 30px */
+      letter-spacing: -0.4px;
+      margin: 40px 0;
+      text-align: center
+    }
+    .btnViewIntegration{
+      border-radius: var(--rounded-3xl, 240px);
+      border: 1px solid var(--primary-500, #FF7A59);
+      display: flex;
+      padding: var(--4, 16px) var(--6, 24px);
+      justify-content: center;
+      align-items: center;
+      gap: var(--2, 8px);
+      color: var(--primary-600, #FF491C);
+      margin: 0 auto;
+      font-family: 'Public-Sans', 'sans-serif';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 24px */
+    }
+  }
+	@media screen and (max-width: 993px) { 
+    .Integration{  
+      width: 100%;
+      padding: 36px 24px;
+      .integrationCont{
+        max-width: 430px;
+        margin: 0 auto;
+      }
+      .centerInt{
+        margin-left: 0;
+        margin-right: 0
+      }
+      .intCardsWrapper{
+        flex-direction: column;
+      }
+
+    } 
+
+  }
+	@media screen and (max-width: 900px) {}
+</style>

@@ -1,0 +1,288 @@
+---
+import { Image } from 'astro:assets';
+import security from '../media/svg2/security.svg'
+import smoothPayments from '../media/svg2/smoothPayments.svg'
+import developer from '../media/svg2/developer.svg'
+---
+<div class="highRistWrapper" id="highRisk">
+  <div class="highRistContainer">
+    <div>
+      <h2 class="HRH2">Zenti Has Your High-Risk Industry Covered...</h2>
+      <p class="HRHP">Backed by 14+ years of experience in high-risk payments.</p>
+    </div>
+    <div class="HRCardsCont">
+      <div class="HRCard">
+        <span class="HRIcon">🍆</span>
+        <p class="HRCardLabel">Adult Entertainment</p>
+      </div>
+      <div class="HRCard">
+        <span class="HRIcon">✈️</span>
+        <p class="HRCardLabel">Travel and Tourism</p>
+      </div>
+      <div class="HRCard">
+        <span class="HRIcon">💊️</span>
+        <p class="HRCardLabel">Nutraceuticals</p>
+      </div>
+    </div>
+    <div class="HRCardsCont">
+      <div class="HRCard">
+        <span class="HRIcon">🫠</span>
+        <p class="HRCardLabel">CBD and Cannabis Products</p>
+      </div>
+      <div class="HRCard">
+        <span class="HRIcon">💨</span>
+        <p class="HRCardLabel">E-cigarettes and Vape </p>
+      </div>
+      <div class="HRCard">
+        <span class="HRIcon">💰️</span>
+        <p class="HRCardLabel">E-cigarettes and Vape </p>
+      </div>
+    </div>
+    <div class="HRCardsCont">
+      <div class="HRCard">
+        <span class="HRIcon">🧾</span>
+        <p class="HRCardLabel">Financial Counsel, Credit & Debt Repair </p>
+      </div>
+      <div class="HRCard">
+        <span class="HRIcon">🔫</span>
+        <p class="HRCardLabel">Firearm and Ammunition</p>
+      </div>
+    </div>
+    <div class="HRCardsCont">
+      <div class="HRCard">
+        <span class="HRIcon">🔁</span>
+        <p class="HRCardLabel">Subscription Services</p>
+      </div>
+      <div class="HRCard">
+        <span class="HRIcon">🌿</span>
+        <p class="HRCardLabel">Medical Marijuana</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="leadingTechnologiesWrapper">
+  <div class="leadingTechnologies">
+    <p class="text-zentiGray font-inconsolata text-lg font-bold leading-[30px] tracking-[1.6px] uppercase text-center">
+      Leading Technologies
+    </p>
+    <h3 class="text-[#1E2022] mx-auto max-w-[950px] text-center font-public-sans text-[36px] font-medium leading-[46px] tracking-[-0.72px] mt-[24px] mb-[32px]">
+      Your One-Stop Shop For High-Risk Payment Solutions — From Approval to Scale
+    </h3>
+    <h5 class="leadingTechH5">The technology, network of processors and APIs you need at any stage of business.</h5>
+    <div class="lTCardContainer">
+      <div class="lTCard">
+        <p class="lTCardTitle">Security</p>
+        <h3 class="ltCardInfo">Chargeback & Fraud Prevention</h3>
+        <p class="lTCardDetails">
+          Block fraudulent transactions with AVS, 3D Secure, and CVV checks. Prevent chargebacks and fees with innovative mitigation tools.
+        </p>
+        <span class="lTCardImgCont">
+          <Image src={security} alt="streamlinedApproval"/>
+        </span>
+      </div>
+      <div class="lTCard">
+        <p class="lTCardTitle">Smooth Payments</p>
+        <h3 class="ltCardInfo">Optimize Customer’s Payment Experience</h3>
+        <p class="lTCardDetails">
+          Leverage Zenti’s network of top payment processors to provide your customers with high-converting and familiar payment experiences.
+        </p>
+        <span class="lTCardImgCont">
+          <Image src={smoothPayments} alt="smoothPayments"/>
+        </span>
+      </div>
+      <div class="lTCard">
+        <p class="lTCardTitle">Developer API</p>
+        <h3 class="ltCardInfo">Integrate Seamlessly with Zenti's APIs</h3>
+        <p class="lTCardDetails">
+          Integrate with your systems or embed solutions in your apps. Streamline payment processing and grow your business with Zenti.
+        </p>
+        <span class="lTCardImgCont">
+          <Image src={developer} alt="developer"/>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .highRistWrapper{
+    background: var(--gray-800, #172029);
+    width: 100%;
+  }
+	.highRistContainer{
+    background: var(--gray-800, #172029);
+    width: 100%;
+    padding: 80px 24px;
+  }
+  .HRH2{
+    color: var(--white, #FFF);
+    text-align: center;
+
+    /* leading-tight/text-4xl/font-semibold */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 45px */
+    letter-spacing: -0.72px;
+  }
+  .HRHP{
+    color: var(--gray-200, #A5B8CD);
+    text-align: center;
+
+    /* text-2xl/font-normal */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    margin-top: 16px;
+    margin-bottom: 24px
+  }
+  .HRCardsCont{
+    display: flex;
+    gap: 24px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 32px
+  }
+  .HRIcon{
+    /* color: var(--gray-200, #A5B8CD);
+    text-align: center; */
+
+    /* text-5xl/font-bold */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 72px */
+  }
+  .HRCardLabel{
+    color: var(--white, #FFF);
+    text-align: center;
+
+    /* uppercase/text-base/font-bold */
+    font-family: Inconsolata, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+  }
+  .HRCard{
+    display: flex;
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--6, 24px);
+    border: 1px solid var(--gray-200, #A5B8CD);
+    /* max-width: 700px; */
+    width: auto;
+  }
+  .leadingTechnologiesWrapper{
+    background: var(--gray-50, #F4F6F9);
+  }
+  .leadingTechnologies{
+    padding: 96px 36px;
+    background: var(--gray-50, #F4F6F9);
+  }
+  .leadingTechH5{
+    color: var(--gray-500, #2D3E50);
+    text-align: center;
+
+    /* text-xl/font-normal */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+  }
+  .lTCardTitle{
+    color: var(--gray-300, #718FAF);
+
+    /* uppercase/text-base/font-bold */
+    font-family: Inconsolata, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .ltCardInfo{
+    color: var(--black-gray, #1E2022);
+    text-align: center;
+
+    /* leading-tight/text-3xl/font-semibold */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 133.333% */
+    letter-spacing: -0.6px;
+    margin-top: 24px;
+    margin-bottom: 24px
+  }
+  .lTCardDetails{
+    color: var(--gray-500, #2D3E50);
+    text-align: center;
+
+    /* text-lg/font-normal */
+    /* font-family: Inter; */
+    font-family: Inconsolata, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    margin-bottom: 56px
+  }
+  .lTCard{
+    max-width: 374px;
+    width: 100%;
+    border-radius: var(--rounded-lg, 16px);
+    border: 1px solid var(--gray-200, #A5B8CD);
+    background: var(--white, #FFF);
+    padding: 32px 24px
+  }
+  .lTCardImgCont{
+    display: flex;
+    justify-content: center
+  }
+  .lTCardContainer{
+    display: flex;
+    max-width: 1280px;
+    justify-content: space-evenly;
+    margin: 56px auto 0 auto;
+    gap: 16px;
+  }
+	@media screen and (max-width: 900px) {
+    .HRCardsCont{
+      flex-direction: column;
+    }
+    .highRistContainer{
+      background: var(--gray-800, #172029);
+      width: 100%;
+      padding: 36px 24px;
+      max-width: 430px;
+      margin: 0 auto
+    }
+    .lTCardContainer{
+      flex-direction: column;
+      align-items: center;
+      /* display: flex;
+      max-width: 1280px;
+      justify-content: space-evenly;
+      margin: 56px auto 0 auto;
+      gap: 16px; */
+    }
+    .leadingTechnologies{
+      padding: 36px 24px;
+      max-width: 430px;
+      margin: 0 auto
+    }
+
+  }
+</style>

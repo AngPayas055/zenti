@@ -1,0 +1,66 @@
+---
+import { Image } from 'astro:assets';
+import howItWorks1 from '../media/svg3/howItWorks1.svg'
+---
+
+<div class="bestPriceWrapper">
+  <div class="bestPrice">
+    <div class="bestPriceCont">    
+      <p class="text-zentiGray font-inconsolata text-lg font-bold leading-[30px] tracking-[1.6px] uppercase text-center">BEST-PRICE-GUARANTEE 👀</p>
+      <h3 class="bestPriceTitle">Unbeatable Rates for High-Risk Payments: Our $1,000 Guarantee </h3>
+      <p class="bestPriceDetails">
+        Your business deserves the best rates for high-risk payment processing. 
+        If you find a lower rate for similar services, just show us the offer. 
+        We'll beat their price or pay you $1,000.
+      </p>
+    </div>
+  </div>
+</div>
+<style>
+.bestPriceWrapper{
+  padding: 0 24px;
+}
+.bestPriceCont{
+  max-width: 624px;
+  margin: 0 auto
+}
+.bestPrice{
+  max-width: 1200px;
+  border-radius: var(--rounded-xl, 32px);
+  border: 1px solid var(--gray-300, #718FAF);
+  background: url('../media/png/bgBestPrice.png') lightgray 50% / cover no-repeat;
+  margin: 80px auto;
+  padding: 48px 24px;
+}
+.bestPriceTitle{
+  color: var(--white, #FFF);
+  /* leading-tight/text-4xl/font-semibold */
+  font-family: 'Public-Sans', 'sans-serif';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 45px */
+  letter-spacing: -0.72px;
+  margin: 32px 0;
+}
+.bestPriceDetails{
+  color: var(--gray-200, #A5B8CD);
+
+  /* text-xl/font-normal */
+  font-family: 'Public-Sans', 'sans-serif';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+@media screen and (max-width: 900px) {  
+  .bestPrice{
+    max-width: 430px;
+    border-radius: var(--rounded-xl, 32px);
+    border: 1px solid var(--gray-300, #718FAF);
+    background: url('../media/png/bgBestPrice.png') lightgray 50% / cover no-repeat;
+    margin: 0 auto 36px auto;
+    padding: 48px 24px;
+  }
+}
+</style>

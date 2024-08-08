@@ -1,0 +1,160 @@
+---
+import { Image } from 'astro:assets';
+import howItWorks1 from '../media/svg3/howItWorks1.svg'
+import hiw1 from '../media/svg3/hiw1.svg'
+import howItWorks2 from '../media/svg3/howItWorks2.svg'
+import hiw2 from '../media/svg3/hiw2.svg'
+import howItWorks3 from '../media/svg3/howItWorks3.svg'
+import hiw3 from '../media/svg3/hiw3.svg'
+---
+
+<div class="howItWorks">	
+  <div class="howItWorksCont">
+    <div class="hiwMainCont">
+      <p class="text-zentiGray font-inconsolata text-lg font-bold leading-[30px] tracking-[1.6px] uppercase text-center">How it works</p>
+      <h3 class="text-[#1E2022] max-w-[730px] mx-auto text-center font-public-sans text-[36px] font-medium leading-[46px] tracking-[-0.72px] mt-[24px] mb-[32px]">Get Your High-Risk Merchant Account Setup in 3-Easy Steps</h3>
+      <p class="hiwDetails">Avoid common pitfalls and get a payment solution tailored to your high-risk business needs.</p>
+    </div>
+    <div class="howItWorksitem">
+      <div class="howItWorksleft">
+        <span class="">
+          <Image src={hiw1} alt="hiw1"/>
+        </span>
+        <h3 class="text-[#10161C] font-public-sans text-[36px] font-semibold leading-[45px] tracking-[-0.72px] my-[16px]">
+          Expert led, free guidance for your high-risk payments 
+        </h3>
+        <p class="hiwItemP">
+          We help you with your application, and underwrite your application in-house. 
+          This means a deep understanding of your business and finding the right solution.
+        </p>
+      </div>
+      <span class="hiwImgCont">
+        <Image src={howItWorks1} alt="howItWorks1"/>
+      </span>
+    </div>
+    <div class="howItWorksitemReverse">
+      <div class="howItWorksleft">
+        <span class="">
+          <Image src={hiw2} alt="hiw1"/>
+        </span>
+        <h3 class="text-[#10161C] font-public-sans text-[36px] font-semibold leading-[45px] tracking-[-0.72px] my-[16px]">
+          Pre-application that protects your credit rating 
+        </h3>
+        <p class="hiwItemP">
+          We pre-vet your application with a network of top processors to ensure it’s a good fit. 
+          We only move forward if we’re confident in the approval. 
+        </p>
+      </div>
+      <span class="hiwImgCont">
+        <Image src={howItWorks2} alt="howItWorks1"/>
+      </span>
+    </div>
+    <div class="howItWorksitem">
+      <div class="howItWorksleft">
+        <span class="">
+          <Image src={hiw3} alt="hiw3"/>
+        </span>
+        <h3 class="text-[#10161C] font-public-sans text-[36px] font-semibold leading-[45px] tracking-[-0.72px] my-[16px]">
+          Approved! Start Processing Payments in as little as 1 Day. 
+        </h3>
+        <p class="hiwItemP">
+          With pre-vetting in place, enjoy a fast, 
+          smooth process that gets you up and running with the right payment solution fast.
+        </p>
+      </div>
+      <span class="hiwImgCont">
+        <Image src={howItWorks3} alt="howItWorks3"/>
+      </span>
+    </div>
+  </div>
+</div>
+<style>
+	.howItWorks{
+    padding: 96px 24px;
+  }
+  .howItWorksCont{
+    border-radius: var(--rounded-xl, 32px);
+    border: 1px solid var(--gray-200, #A5B8CD);
+    background: var(--white, #FFF);
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 24px;
+  }
+  .hiwDetails{
+    color: var(--gray-500, #2D3E50);
+    text-align: center;
+    /* text-xl/font-normal */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+    margin: 0 24px
+  }
+  .hiwMainCont{
+    max-width: 967px;
+    margin: 0 auto;
+    padding: 24px 0;
+  }
+  .howItWorksitem{
+    display: flex;
+    max-width: 1014px;
+    margin: 50px auto;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-200, #A5B8CD);
+    padding: 36px 24px;
+  }
+  .howItWorksitemReverse{
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1014px;
+    margin: 50px auto;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-200, #A5B8CD);
+    padding: 36px 24px;
+  }
+  .howItWorksleft{
+    max-width: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hiwItemP{
+    color: var(--gray-500, #2D3E50);
+    /* text-xl/font-normal */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+  }
+	@media screen and (max-width: 900px) {
+    .howItWorks{
+      padding: 36px 24px;
+    }
+    .howItWorksCont{
+      max-width: 430px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .howItWorksitem{
+      flex-direction: column;
+      align-items: center;
+      border-bottom: none;      
+      margin: 0 auto;
+    }
+    .howItWorksitemReverse{
+      flex-direction: column;
+      align-items: center;
+      border-bottom: none;
+      margin: 0 auto;
+
+    }
+    .hiwImgCont{
+      margin-top: 36px;
+    }
+    .hiwDetails{
+      text-align: left
+    }
+  }
+</style>

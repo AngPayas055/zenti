@@ -1,0 +1,229 @@
+---
+import { Image } from 'astro:assets';
+import bugsStreamline from '../media/svg/bugs-streamline.svg'
+import creditScore from '../media/svg/creditScore.svg'
+
+
+import cannabox from '../media/svg/cannabox.svg'
+import chakraOpenings from '../media/svg/chakraOpenings.svg'
+import daysInn from '../media/svg/daysInn.svg'
+import highTimes from '../media/svg/highTimes.svg'
+import texas from '../media/svg/texas.svg'
+import iconCheck from '../media/svg/iconCheck.svg'
+// interface Props {
+// 	title: string;
+// 	body: string;
+// 	href: string;
+// }
+
+// const { href, title, body } = Astro.props;
+---
+
+<div class="py-[16px] astrolg:py-[64px]">  
+  <div class="flex mx-auto flex-col items-center p-6 astrolg:flex-row max-w-[1280px]">
+    <div class="sectionOneLeftCont">
+      <p class="text-zentiGray font-inconsolata text-lg font-bold leading-[30px] tracking-[1.6px] uppercase text-left">For High-Risk Business</p>
+      <p class="text-gray-900  font-public-sans text-[36px] astrolg:text-[60px] font-semibold astrolg:leading-[60px] leading-[36px] tracking-[-1.2px] mt-[40px] mb-[24px]">High-Risk Merchant Accounts, Sorted. </p>
+      <p class="fontPBlack">Get payment solutions fit for your high-risk business—this means
+        uninterrupted payments and transparent processing costs.
+      </p>
+      <span class="flex">     
+        <Image src={iconCheck} alt="check" class="checkIcon"/><p class="fontCheck">Streamlined approval, matched to the right solution</p>
+      </span>
+      <span class="flex">        
+        <Image src={iconCheck} alt="check" class="checkIcon"/><p class="fontCheck">Avoid freezes, holds, and sudden disruptions</p>
+      </span>
+      <span class="flex">
+        <Image src={iconCheck} alt="check" class="checkIcon"/><p class="fontCheck">Best-price guarantee, for high-risk</p>
+      </span>
+      
+      <button class="secOneBtn">Get Free Guidance Now!</button>
+      <p class="fontPBtm">Don’t settle for high-fees & the wrong solution</p>
+    </div>
+    <div class="sectionOneRightCont">      
+      <span class="bugsStreamlineCont">
+        <Image src={creditScore} alt="Logo" class="ms-auto"/>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="sectionTwoCont">
+  <div class="sectionTwoInnerCont">
+    <span class="">      
+      <Image src={texas} alt="Logo"/>
+    </span>
+    <span class="largeScreen">
+      <Image src={daysInn} alt="daysInn"/>
+    </span>
+    <span class="largeScreen">
+      <Image src={chakraOpenings} alt="chakraOpenings"/>
+    </span>
+    <span class="largeScreen">
+      <Image src={highTimes} alt="highTimes"/>
+    </span>
+    <span class="">
+      <Image src={cannabox} alt="cannabox"/>
+    </span>    
+  </div>
+</div>
+<style>
+  .sectionOneCont{
+    display: flex;
+    max-width: 1280px;
+    width: 100%;
+    padding: var(--6, 24px);
+    align-items: center;
+    gap: var(--10, 40px);
+    margin: 0 auto;
+  }
+  .sectionOneLeftCont{
+    width: 50%;
+  }
+  .sectionOneRightCont{
+    width: 50%;
+  }
+  .fontPBlack{
+    color: var(--gray-500, #2D3E50);
+    /* text-xl/font-normal */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+    margin-bottom: 16px
+  }
+  .secOneBtn{
+    color: var(--white, #FFF);
+    /* text-xl/font-semibold */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.4px;
+    display: flex;
+    padding: var(--4, 16px) var(--8, 32px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--2, 8px);
+    border-radius: var(--rounded-3xl, 240px);
+    background: var(--primary-500, #FF7A59);
+    margin: 40px 0 12px 0;
+  }
+  .fontPBtm{
+    color: var(--gray-500, #2D3E50);
+    text-align: center;
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    width: 282px;
+  }
+  .bugsStreamlineCont{
+    max-width: 557px;
+    width: 100%;
+    max-height: 557px;
+    height: 100%;
+  }
+  .sectionTwoCont{
+    width: 100%;
+    padding: var(--14, 56px) 0px;
+    gap: 1px;
+    border-top: 1px solid var(--gray-300, #718FAF);
+    border-bottom: 1px solid var(--gray-300, #718FAF);
+  }
+  .sectionTwoInnerCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .checkIcon{
+    margin-right: 16px;
+  }
+  .fontCheck{
+    color: var(--gray-500, #2D3E50);
+
+    /* text-base/font-normal */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  
+	@media screen and (max-width: 900px) {
+		.largeScreen{
+			display: none;
+		}
+		.smallScreen{
+			display: block;
+		}
+    .sectionOneCont{
+      flex-direction: column;
+    }
+    .sectionOneLeftCont{
+      width: 100%;
+      max-width: 430px;
+    }
+    .sectionOneRightCont{
+      width: 100%;
+      max-width: 430px;
+    }
+
+    .fontPBlack{
+      color: var(--gray-500, #2D3E50);
+      /* text-xl/font-normal */
+      /* font-family: "Public Sans"; */
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 30px */
+    }
+    .secOneBtn{display: flex;
+      max-width: 327px;
+      padding: var(--4, 16px) var(--8, 32px);
+      justify-content: center;
+      align-items: center;
+      gap: var(--2, 8px);
+      border-radius: var(--rounded-3xl, 240px);
+      background: var(--primary-500, #FF7A59);
+      color: var(--white, #FFF);
+      /* text-xl/font-semibold */
+      /* font-family: "Public Sans"; */
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 30px; /* 150% */
+      letter-spacing: -0.4px;
+      margin: 32px auto 16px auto;
+    }
+    .fontPBtm{
+      color: var(--gray-500, #2D3E50);
+      text-align: center;
+      /* font-family: "Public Sans"; */
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 19.2px */
+      width: 282px;
+      margin: 0 auto;
+    }
+    .bugsStreamlineCont{
+      max-width: 557px;
+      width: 100%;
+      max-height: 557px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sectionTwoInnerCont{      
+      justify-content: space-evenly;
+    }
+  }
+</style>

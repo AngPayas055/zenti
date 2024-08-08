@@ -1,0 +1,116 @@
+---
+import { Image } from 'astro:assets';
+import developer from '../media/svg2/developer.svg'
+import watchout from '../media/svg2/watchout.svg'
+---
+
+<div class="watchoutCont">	
+  <div class="watchoutWrapper">
+    <div class="wLeftCont">      
+      <span class="">
+        <Image src={watchout} alt="watchout"/>
+      </span>
+      <h3 class="watchoutH3">Thinking About Applying for a Merchant Account Online?
+        <br>
+        STOP  🛑
+      </h3>
+    </div>
+    <div class="wRightCont">
+      <h4 class="wRH4">⚠️ Watch out for...  </h4>
+      <div class="watchOItems">
+        <p class="watchWarn">CREDIT CHECKS</p>
+        <p class="watchLabel">Many processors run credit checks each time you apply, which can hurt your credit score.
+        </p>
+      </div>
+      <div class="watchOItems">
+        <p class="watchWarn">CREDIT CHECKS</p>
+        <p class="watchLabel">Many processors run credit checks each time you apply, which can hurt your credit score.
+        </p>
+      </div>
+      <div class="watchOItems">
+        <p class="watchWarn">CREDIT CHECKS</p>
+        <p class="watchLabel">Many processors run credit checks each time you apply, which can hurt your credit score.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+	.watchoutCont{
+    background: var(--gray-800, #172029);
+    padding: var(--24, 96px) var(--6, 24px);
+  }
+  .watchoutWrapper{
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .wRightCont{
+    max-width: 576px;
+  }
+  .watchoutH3{
+    color: var(--white, #FFF);
+    /* leading-tight/text-4xl/font-semibold */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 45px */
+    letter-spacing: -0.72px;
+  }
+  .wLeftCont{
+    max-width: 576px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .wRH4{
+    color: var(--primary-50, #FFFBFA);
+    /* leading-tight/text-3xl/font-semibold */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 133.333% */
+    letter-spacing: -0.6px;
+    margin-bottom: 16px;
+  }
+  .watchOItems{
+    border-bottom: 1px solid var(--gray-500, #2d5039);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px -1px rgba(0, 0, 0, 0.10);
+    padding: 36px 16px 16px 16px;
+  }
+  .watchWarn{
+    color: var(--orange-600, #FF491C);
+    /* uppercase/text-base/font-semibold */
+    font-family: Inconsolata, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+  }
+  .watchLabel{
+    color: var(--white, #FFF);
+    /* text-xl/font-normal */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+  }
+	@media screen and (max-width: 900px) {
+    .watchoutCont{
+      padding: var(--24, 36px) var(--6, 24px);
+    }
+    .watchoutWrapper{
+      max-width: 430px;
+      flex-direction: column;
+    }
+    .wRH4{
+      margin-top: 64px;
+    }
+  }
+</style>

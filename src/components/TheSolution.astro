@@ -1,0 +1,146 @@
+---
+import { Image } from 'astro:assets';
+import streamlinedApproval from '../media/svg/streamlinedApproval.svg'
+import disruptionFee from '../media/svg/disruptionFee.svg'
+import priceGuarantee from '../media/svg/priceGuarantee.svg'
+---
+<div class="soundRightSectionContainer">  
+  <div class="soundRightSection">
+    <div class="srsCont">
+      <h4 class="text-[#1E2022] font-public-sans text-[36px] font-medium leading-[46px] tracking-[-0.72px] mt-[24px] mb-[32px] text-center">Sound about right? It’s tough...</h4>
+      <p class="srsP">
+        Your high-risk business hits roadblocks while you struggle to keep payments flowing. 
+        You deserve a solution for your unique challenges. 
+        Not an ‘off the shelf’ product that adds to your problems. <br> <br>
+        
+        But it doesn’t have to be this way. You deserve a payment solution that understands your needs. 
+        Provides stability, and lets you focus on what you do best—running and growing your business.
+      </p>
+    </div>
+  </div>
+</div>
+<div id="solutions" class="theSolutionCont">
+  <p class="text-zentiGray font-inconsolata text-lg font-bold leading-[30px] tracking-[1.6px] uppercase text-center">The solution</p>
+  <h4 class="max-w-[900px] mx-auto text-center text-[#1E2022] font-public-sans text-[36px] font-medium leading-[46px] tracking-[-0.72px] mt-[24px] mb-[32px]">
+    Zenti: Expert Guidance & Solutions for Every Step of 
+    Your High-Risk Payment Processing Journey
+  </h4>
+  <p class="theSolH5">
+    Find your perfect match for seamless, stable, and low-cost payment processing.
+  </p>
+  <div class="theSolCardContainer">    
+    <div class="theSolCard">
+      <span>
+        <Image src={streamlinedApproval} alt="streamlinedApproval"/>
+      </span>
+      <h5 class="solLabelB">Streamlined approval, and a solution that fits</h5>
+      <p class="solLabel">Get the right payment solutions based tailored to your needs & risk profile.</p>
+    </div>
+    <div class="theSolCard">
+      <span>
+        <Image src={disruptionFee} alt="streamlinedApproval"/>
+      </span>
+      <h5 class="solLabelB">Avoid Freezes, Holds, and Disruptions</h5>
+      <p class="solLabel">Get matched to the right product. No more unexpected holds and freezes.</p>
+    </div>
+    <div class="theSolCard">
+      <span>
+        <Image src={priceGuarantee} alt="streamlinedApproval"/>
+      </span>
+      <h5 class="solLabelB">Best-Price Guarantee, For High-Risk</h5>
+      <p class="solLabel">Pricing specific to your business, instead of one-size-fits-all rates.</p>
+    </div>
+  </div>
+</div>
+<style>
+  .soundRightSectionContainer{
+    background: var(--gray-50, #F4F6F9);
+    width: 100%;
+  }
+  .soundRightSection{
+    background: var(--gray-50, #F4F6F9);
+    width: 100%;
+    padding: 96px 24px
+  }
+  .srsCont{
+
+  }
+  .srsP{
+    max-width: 682px;
+    color: var(--gray-500, #2D3E50);
+
+    /* leading-none/text-xl/font-normal */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    margin:32px auto 16px auto;
+  }
+  .theSolutionCont{
+    padding: 96px 24px
+  }
+  .theSolH5{
+    color: var(--gray-500, #2D3E50);
+    text-align: center;
+
+    /* text-xl/font-normal */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+  }
+  .theSolCard{
+    max-width: 336px;
+    width: 100%;
+    padding: 24px 6px;
+  }
+  .solLabelB{
+    color: var(--gray-900, #10161C);
+    /* leading-tight/text-2xl/font-semibold */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px; /* 141.667% */
+    letter-spacing: -0.48px;
+    margin: 24px 0
+  }
+  .solLabel{
+    color: var(--gray-500, #2D3E50);
+    /* text-base/font-normal */
+    font-family: 'Public-Sans', 'sans-serif';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  .theSolCardContainer{
+    display: flex;
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    margin-top: 64px
+  }
+	@media screen and (max-width: 900px) {
+    .soundRightSection{
+      background: var(--gray-50, #F4F6F9);
+      width: 100%;
+      padding: 36px 24px;
+      max-width: 430px;
+      margin: 0 auto
+    }
+    .theSolCardContainer{
+      flex-direction: column;
+      align-items: center
+    }
+    .theSolutionCont{
+      padding: 16px 24px;
+      max-width: 430px;
+      margin: 0 auto;
+    }
+
+  }
+</style>
